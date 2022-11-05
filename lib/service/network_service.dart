@@ -7,7 +7,7 @@ import 'package:zeebflix/service/sharepref_service.dart';
 
 class NetworkService{
   var client=http.Client();
-  String basePath="http://192.168.43.150/zeeebflix-webservice/";
+  String basePath="https://zeeeb.000webhostapp.com/";
   Future registerUser(String fullname, String _email, String password) async {
     String url = basePath + "serviceregister.php";
     var response = await client.post(url,
